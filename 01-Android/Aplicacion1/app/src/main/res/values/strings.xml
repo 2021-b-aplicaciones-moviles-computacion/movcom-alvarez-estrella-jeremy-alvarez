@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name" translatable="false">My Application</string>
+    <string name="hola_mundo" translatable="false">Bienvenido</string>
+    <color name="colordeFondo">#FFFFFF</color>
+    <color name="colordeTexto">#000000</color>
+    <string-array name="string_array_opciones_dialogo">
+        <item>Lunes</item>
+        <item>Martes</item>
+        <item>Miercoles</item>
+    </string-array>
+
+</resources>

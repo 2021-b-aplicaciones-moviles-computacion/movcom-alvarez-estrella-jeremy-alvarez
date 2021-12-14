@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hola_mundo" translatable="false">Welcome land</string>
+    <color name="colordeFondo">#00bb2d</color>
+    <color name="colordeTexto">#572364</color>
+</resources>
