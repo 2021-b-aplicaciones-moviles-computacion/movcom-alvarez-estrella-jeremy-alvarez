@@ -5,8 +5,6 @@ class Pokemon (
     private var nombre_pokemon: String = "",
     private var shiny: Boolean = true,
     private var nivel: Int = 1,
-    private var habilidad: String = "",
-    private var estadisticas: Array<Int> = arrayOf(0,0,0,0,0,0),
     private var trainer: Int = 0
 ){
     init {
@@ -29,14 +27,6 @@ class Pokemon (
         return this.nivel
     }
 
-    public fun getHabilidad(): String{
-        return this.habilidad
-    }
-
-    public fun getEstadisticas(): Array<Int>{
-        return this.estadisticas
-    }
-
     public fun getTrainer(): Int{
         return this.trainer
     }
@@ -56,14 +46,6 @@ class Pokemon (
 
     public fun setNivel(lvl:Int){
         this.nivel = lvl
-    }
-
-    public fun setHabilidad(hab:String){
-        this.habilidad=hab
-    }
-
-    public fun setEstadisticas(stats: Array<Int>){
-        this.estadisticas = stats
     }
 
     public fun setTrainer(entrenador: Int){

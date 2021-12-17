@@ -4,6 +4,7 @@ import android.app.Activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.Button
 import androidx.activity.result.contract.ActivityResultContract
 import androidx.activity.result.contract.ActivityResultContracts
@@ -14,7 +15,11 @@ class MainActivity : AppCompatActivity() {
         ActivityResultContracts.StartActivityForResult()
     ){result ->
         if (result.resultCode == Activity.RESULT_OK){
-
+            if(result.data != null){
+                val data = result.data
+                Log.i("intent","${data?.getStringExtra("nombreModificado")}")
+                Log.i("intent","${data?.getIntExtra("edadModificado",0)}")
+            }
         }
     }
 
@@ -54,6 +59,8 @@ class MainActivity : AppCompatActivity() {
         intentExplicito.putExtra("nombre","Jeremy")
         intentExplicito.putExtra("apellido","Alvarez")
         intentExplicito.putExtra("edad","22")
+        intentExplicito.putExtra("A",BEntrenador("a","b"))
+        resultLauncher.launch(intentExplicito)
 
         startActivityForResult(intent, CODIGO_RESPUESTA_INTENT_EXPLICITO)
 

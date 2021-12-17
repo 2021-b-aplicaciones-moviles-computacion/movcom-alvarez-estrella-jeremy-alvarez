@@ -1,0 +1,5 @@
+2,Steelix,true,36,4
+3,Charizard,false,40,2
+4,Gigalith,false,52,3
+5,Snorlax,false,20,2
+6,Arbok,false,31,4
