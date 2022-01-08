@@ -15,6 +15,11 @@
         <activity
             android:name=".AlistView"
             android:exported="false" />
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.SEND"/>
+                <data android:mineType="text/plain"/>
+            </intent-filter>
         <activity
             android:name=".ACicloVida"
             android:exported="false" />
