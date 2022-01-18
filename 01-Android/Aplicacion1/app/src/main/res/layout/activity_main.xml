@@ -60,4 +60,12 @@
         tools:layout_editor_absoluteX="22dp"
         tools:layout_editor_absoluteY="130dp" />
 
+    <Button
+        android:id="@+id/btn_ir_recycler_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Recycler View"
+        tools:layout_editor_absoluteX="201dp"
+        tools:layout_editor_absoluteY="58dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

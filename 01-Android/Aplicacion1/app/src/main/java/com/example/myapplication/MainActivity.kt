@@ -74,7 +74,7 @@ class MainActivity : AppCompatActivity() {
             EBaseDeDatos.tablaUsuario?.actualizarUsuarioFormulario(
                 "Vicente",
                 "Vicenet desc",
-                idQuemado
+                idQuemado.toString()
             )
             consulta = EBaseDeDatos.tablaUsuario?.consultarUsuarioPorId(
                 idQuemado
@@ -88,6 +88,12 @@ class MainActivity : AppCompatActivity() {
             )
             Log.i("bdd", "Primera Consulta: ${consulta?.nombre}")
         }
+
+        val botonRecyclerView = findViewById<Button>(R.id.btn_ir_recycler_view)
+        botonRecyclerView
+            .setOnClickListener {
+                abrirActividadConParametros(GRecyclerView::class.java)
+            }
     }
 
     fun abrirActividadConParametros(
