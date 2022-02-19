@@ -27,7 +27,7 @@ class MainActivity : AppCompatActivity() {
 
     val CODIGO_RESPUESTA_INTENT_IMPLICITO = 402
 
-    /*override fun onCreate(savedInstanceState: Bundle?) {
+    override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         val botonCicloVida = findViewById<Button>(R.id.btn_ir_ciclo_vida)
@@ -54,9 +54,14 @@ class MainActivity : AppCompatActivity() {
                 )
                 startActivityForResult(intentConRespuesta, CODIGO_RESPUESTA_INTENT_IMPLICITO)
             }
-    }*/
 
-    override fun onCreate(savedInstanceState: Bundle?) {
+        val botonHTTP = findViewById<Button>(R.id.btn_ir_http)
+        botonHTTP.setOnClickListener {
+            abrirActividadConParametros(HTTPActivity::class.java)
+        }
+    }
+
+    /*override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         EBaseDeDatos.tablaUsuario = ESqLiteHelperUsuario(this)
@@ -94,7 +99,7 @@ class MainActivity : AppCompatActivity() {
             .setOnClickListener {
                 abrirActividadConParametros(GRecyclerView::class.java)
             }
-    }
+    }*/
 
     fun abrirActividadConParametros(
         clase: Class<*>,

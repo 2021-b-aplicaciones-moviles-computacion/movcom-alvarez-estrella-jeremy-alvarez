@@ -6,4 +6,20 @@
     android:layout_height="match_parent"
     tools:context=".GRecyclerView">
 
+    <TextView
+        android:id="@+id/tv_total_likes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="@+id/rv_entrenadores"
+        app:layout_constraintStart_toStartOf="@+id/rv_entrenadores"
+        tools:layout_editor_absoluteY="115dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_entrenadores"
+        android:layout_width="344dp"
+        android:layout_height="476dp"
+        tools:layout_editor_absoluteX="27dp"
+        tools:layout_editor_absoluteY="194dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

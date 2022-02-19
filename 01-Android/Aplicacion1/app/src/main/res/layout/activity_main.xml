@@ -37,10 +37,11 @@
         android:id="@+id/btn_ir_list_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="88dp"
+        android:layout_marginBottom="16dp"
         android:text="ListView"
         app:layout_constraintBottom_toTopOf="@+id/btn_ir_ciclo_vida"
         app:layout_constraintEnd_toEndOf="@+id/btn_ir_ciclo_vida"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/btn_ir_ciclo_vida" />
 
     <Button
@@ -57,15 +58,23 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="implicito"
-        tools:layout_editor_absoluteX="22dp"
-        tools:layout_editor_absoluteY="130dp" />
+        tools:layout_editor_absoluteX="156dp"
+        tools:layout_editor_absoluteY="191dp" />
 
     <Button
         android:id="@+id/btn_ir_recycler_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Recycler View"
-        tools:layout_editor_absoluteX="201dp"
-        tools:layout_editor_absoluteY="58dp" />
+        tools:layout_editor_absoluteX="135dp"
+        tools:layout_editor_absoluteY="132dp" />
+
+    <Button
+        android:id="@+id/btn_ir_http"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HTTP"
+        tools:layout_editor_absoluteX="167dp"
+        tools:layout_editor_absoluteY="60dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

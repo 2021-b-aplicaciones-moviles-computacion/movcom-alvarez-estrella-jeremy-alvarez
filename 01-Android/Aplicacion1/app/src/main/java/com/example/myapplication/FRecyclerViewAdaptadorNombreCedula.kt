@@ -29,7 +29,11 @@ class FRecyclerViewAdaptadorNombreCedula (
 
         }
 
-        fun anadirLike(){}
+        fun anadirLike(){
+            this.numeroLikes = this.numeroLikes+1
+            likesTextView.text = this.numeroLikes.toString()
+            contexto.aumentarTotalLikes()
+        }
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
