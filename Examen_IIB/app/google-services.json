@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "111217333721",
+    "project_id": "b-jdae-moviles",
+    "storage_bucket": "b-jdae-moviles.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:111217333721:android:e99c37c53192c2d70175c8",
+        "android_client_info": {
+          "package_name": "com.example.trainer_pokemon__firebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "111217333721-i6dg2qpd0kb5bvks20q64ep4e0jjqoe0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB-sHSOvsLEXCO-PGwF-n3VwbqE8XzHp_g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "111217333721-i6dg2qpd0kb5bvks20q64ep4e0jjqoe0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
